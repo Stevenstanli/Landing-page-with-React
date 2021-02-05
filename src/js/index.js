@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 //include bootstrap npm library into the bundle
-import "bootstrap";
+//import "bootstrap";
 
 //include your index.scss file into the bundle
 import "../styles/index.scss";
@@ -12,4 +12,9 @@ import "../styles/index.scss";
 import { Home } from "./component/home.js";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(
+	<div>
+		<Home />
+	</div>,
+	document.querySelector("#app")
+);
